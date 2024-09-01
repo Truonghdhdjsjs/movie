@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+// file abstracts
+@import './abstracts/functions.scss';
+@import './abstracts/mixins.scss';
+@import './abstracts/variables.scss.scss';
+//file base
+@import './base/rest.scss';
+@import './base/base.scss';
+@import './base/typography.scss';
+///file layout
+@import './layout/header.scss';
