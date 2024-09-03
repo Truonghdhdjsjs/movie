@@ -1,10 +1,6 @@
 body {
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: $secondary-color;
+    color: $font-color;
+    // font-size: clamp(1rem, 2vw, 1.5rem);
+    height: 100vh;
   }
-  
-  a {
-    color: $primary-color;
-    text-decoration: none;
-  }
-  

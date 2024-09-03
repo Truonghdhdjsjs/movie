@@ -4,9 +4,12 @@
 @import './abstracts/functions.scss';
 @import './abstracts/mixins.scss';
 @import './abstracts/variables.scss.scss';
+
 //file base
 @import './base/rest.scss';
 @import './base/base.scss';
 @import './base/typography.scss';
+@import './base/grid.scss';
 ///file layout
 @import './layout/header.scss';
+@import './abstracts/media.scss';

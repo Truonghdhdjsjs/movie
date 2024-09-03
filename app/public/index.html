@@ -3,15 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phim Mới</title>
+    <title>NETFLIX</title>
     <link rel="website icon" type="png" href="./img/logo/wp5063342.png">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div class="app">
-        <header id="header"></header>
-        <div class="wapper"></div>
+<body style="background-color: #1E1E1E;">
+    <div class="app">      <!-- start header -->
+        <header id="header">
+               <div class="grid">
+                  <header class="header_above">
+                        <nav class="header_above_nav">
+                            <div class="header_above_nav_menu">
+                                <i class="fa-solid fa-bars"></i>
+                                <div class="header_above_nav_menu_border">
+                                    <i class="fa-solid fa-x"></i>
+                                    <ul>
+                                        <li><a href="">trang chủ</a></li>
+                                        <li>
+                                            <span class="appears">thể loại</span>
+                                            <div class="drop_downs">
+                                                <ul>
+                                                    <li><a href="">phim hành động</a></li>
+                                                    <li><a href="">phim tình cảm - lãng mạn</a></li>
+                                                    <li><a href="">phim chiến tranh</a></li>
+                                                    <li><a href="">phim phiêu lưu</a></li>
+                                                    <li><a href="">phim hài hước</a></li>
+                                                    <li><a href="">phim viễn tưởng</a></li>
+                                                    <li><a href="">phim cổ trang</a></li>
+                                                    <li><a href="">phim hoạt hình</a></li>
+                                                    <li><a href="">phim kinh dị</a></li>
+                                                    <li><a href="">phim hình sự</a></li> 
+                                                    <li><a href="">phim tâm lý</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="">phim netflit</a></li>
+                                        <li><a href="">phim chiếu rạp</a></li>
+                                        <li><a href="">phim truyền hình</a></li>
+                                        <li><a href="">phim bộ</a></li>
+                                        <li><a href="">phim hoạt hình</a></li>
+                                        <li><a href="">phim Stripchat</a></li>
+                                        <li><a href="">phim việt nam</a></li>
+                                        <li><a href="">phim mới</a></li>
+                                        <li><a href="">lịch chiếu phim</a></li>
+                                        <li><a href="">liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header_above_nav-img">
+                                <a href="index.html"><img src="./img/logo/Screenshot_2024-09-01_220642-removebg-preview.png" alt="NETFLIX" class="header_above_nav-img_logo"></a>
+                            </div>
+                            <div class="header_above_nav-search">
+                                <form action="index.html" method="post">
+                                    <div class="header_above_nav-balance">
+                                        <input type="search" name="txtsearch" id="txtsearch" class="txtsearch" placeholder="Tìm kiếm phim của bạn ..." maxlength="30" minlength="1" >
+                                        <input type="submit" value="Tìm kiếm" name="btn_search" id="btn_search" class="btn_search">
+                                    </div>
+                                    <!-- <div class="header_above_nav-balance-search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div> -->
+                                </form>
+                            </div>
+                            <div class="header_above_nav-list_movie">
+                                    <a href="">
+                                        <span>Danh sách phim</span>
+                                    </a>
+                            </div>
+                        </nav>
+                  </header>
+                  <header class="header_hidden">
+                   <nav class="header_hidden_nav">
+                        <ul class="header_hidden_nav-list">
+                            <li class="header_hidden_nav-item">
+                                <a href="">Trang chủ</a>
+                            </li>
+                            <li class="header_hidden_nav-item header_hidden_nav-drop-down">
+                               <span>thể loại</span>
+                               <i class="fas fa-caret-down"></i>
+                               <div class="header_hidden_nav_drop_downs">
+                                    <ul>
+                                        <li><a href="">phim hành động</a></li>
+                                        <li><a href="">phim tình cảm - lãng mạn</a></li>
+                                        <li><a href="">phim chiến tranh</a></li>
+                                        <li><a href="">phim phiêu lưu</a></li>
+                                        <li><a href="">phim hài hước</a></li>
+                                        <li><a href="">phim viễn tưởng</a></li>
+                                        <li><a href="">phim cổ trang</a></li>
+                                        <li><a href="">phim hoạt hình</a></li>
+                                        <li><a href="">phim kinh dị</a></li>
+                                        <li><a href="">phim hình sự</a></li> 
+                                        <li><a href="">phim tâm lý</a></li>
+                                    </ul>
+                               </div> 
+                            </li>
+                            <li class="header_hidden_nav-item">
+                                <a href="">Phim NetFlix</a>
+                            </li>
+                            <li class="header_hidden_nav-item">
+                                <a href="">Phim chiếu rạp</a>
+                            </li>
+                            <li class="header_hidden_nav-item">
+                                <a href="">Phim truyền hình</a>
+                            </li>
+                            <li class="header_hidden_nav-item">
+                                <a href="">Phim bộ</a>
+                            </li>
+                            <li class="header_hidden_nav-item">
+                                <a href="">Phim hoạt hình</a>
+                            </li>
+                            <li class="header_hidden_nav-item">
+                                <a href="">Phim Stripchat</a>
+                            </li>
+                            <li class="header_hidden_nav-item">
+                                <a href="">Phim mới</a>
+                            </li>
+                            <li class="header_hidden_nav-item">
+                                <a href="">Phim việt nam</a>
+                            </li>
+                            <li class="header_hidden_nav-item">
+                                <a href="">lịch chiếu phim</a>
+                            </li>
+                            <li class="header_hidden_nav-item">
+                                <a href="">liên hệ</a>
+                            </li>
+                        </ul>
+                   </nav>
+                  </header>
+               </div>
+        </header>
+            <!-- finish header -->
+        <div class="wapper">
+            <section id="banner">
+                
+            </section>
+        </div>
         <footer id="footer"></footer>
     </div>
 </body>
+<script src="./js/button/menu_drop.js"></script>
+<script src="./js/button/menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

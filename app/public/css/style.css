@@ -4,26 +4,280 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 body {
-  background-color: #f8f9fa;
-  color: #333;
-}
-
-a {
-  color: #3498db;
-  text-decoration: none;
+  background-color: #2ecc71;
+  color: #fff;
+  height: 100vh;
 }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.6rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Sansita", sans-serif;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+p {
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+}
+
+a {
+  color: #161619;
+  text-decoration: none;
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+}
+
+ul {
+  list-style: none;
+}
+
+.grid {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header_above {
+  padding-top: 10px;
+}
+.header_above_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_above_nav-img a img {
+  width: 150px;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+.header_above_nav-search, .header_above_nav-balance {
+  display: flex;
+  align-items: center;
+  gap: 0 4px;
+}
+.header_above_nav-balance .txtsearch {
+  min-width: 500px;
+  min-height: 53px;
+  outline: none;
+  background-color: #BEBEBE;
+  transition: all 0.3s ease;
+}
+.header_above_nav-balance .txtsearch:hover, .header_above_nav-balance .txtsearch:active, .header_above_nav-balance .txtsearch:focus {
+  background-color: #fff;
+}
+.header_above_nav-balance .txtsearch::placeholder {
+  color: #6a6a6a;
+  padding-left: 1rem;
+}
+.header_above_nav-balance .btn_search {
+  background-color: #E6090F;
+  color: #fff;
+  border: none;
+  min-height: 53px;
+  min-width: 112px;
+  display: block;
+  transition: all 0.3s ease;
+}
+.header_above_nav-balance .btn_search:hover, .header_above_nav-balance .btn_search:active {
+  background-color: #ff393f;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+.header_above_nav-list_movie {
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #265DA8;
+  display: block;
+  transition: all 0.3s ease;
+}
+.header_above_nav-list_movie:hover, .header_above_nav-list_movie:active {
+  background-color: #346fc1;
+}
+.header_above_nav-list_movie a {
+  text-decoration: none;
+  color: #fff;
+}
+.header_above_nav_menu, .header_above_nav-balance-search {
+  display: none;
+}
+
+.header_hidden_nav {
+  padding-top: 20px;
+}
+.header_hidden_nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+.header_hidden_nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 0.25px;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+.header_hidden_nav-list li a:hover {
+  color: #e6e5e5;
+}
+.header_hidden_nav-drop-down span, .header_hidden_nav-drop-down i {
+  color: #fff;
+  text-transform: capitalize;
+}
+.header_hidden_nav-drop-down span {
+  font-weight: 600;
+}
+.header_hidden_nav_drop_down {
+  position: absolute;
+}
+.header_hidden_nav-item {
+  position: relative;
+}
+.header_hidden_nav_drop_downs {
+  position: absolute;
+  min-width: 300px;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.header_hidden_nav_drop_downs ul {
+  list-style: none;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 5px 0;
+  background-color: rgb(49, 49, 49);
+  padding: 5px 0;
+}
+.header_hidden_nav_drop_downs ul li a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.header_hidden_nav_drop_downs ul li a:hover {
+  color: #BEBEBE;
+}
+.header_hidden_nav-item:hover .header_hidden_nav_drop_downs, .header_hidden_nav-item:focus .header_hidden_nav_drop_downs {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid {
+    max-width: 1000px;
+  }
+  .header_above_nav {
+    padding: 0 10px;
+  }
+  .header_above_nav-img a img {
+    display: block;
+    width: 130px;
+    object-fit: contain;
+  }
+  .header_above_nav-balance .txtsearch {
+    min-width: 350px;
+    min-height: 40px;
+  }
+  .header_above_nav-balance .btn_search {
+    min-height: 40px;
+  }
+  .header_above_nav-list_movie {
+    min-height: 40px;
+  }
+  .header_above_nav_menu {
+    display: block;
+  }
+  .header_above_nav_menu i {
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .header_above_nav_menu_border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(32, 32, 33);
+    height: 100%;
+    max-width: 300px;
+    transform: translateX(-100%);
+    transition: 0.3s ease;
+  }
+  .header_above .active {
+    transform: translateX(0%);
+  }
+  .header_above_nav_menu_border ul {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px 0;
+    padding-top: 10px;
+    overflow-y: scroll;
+  }
+  .header_above_nav_menu_border ul li a, .header_above_nav_menu_border ul li span {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  .header_above_nav_menu_border ul li a:hover, .header_above_nav_menu_border ul li a:active {
+    color: #b4b4b4;
+  }
+  .header_above_nav_menu_border i {
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in;
+  }
+  .header_above_nav_menu_border i:hover, .header_above_nav_menu_border i:active {
+    color: #b4b4b4;
+  }
+  .header_above .drop_downs {
+    height: 0px;
+    overflow: hidden;
+  }
+  .header_above .drop_downs ul {
+    display: flex;
+    align-items: start;
+    list-style: none;
+  }
+  .header_above .appear {
+    height: 320px;
+  }
+  .header_hidden {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header_above_nav-img a img {
+    margin-left: 150px;
+  }
+  .header_above_nav-balance {
+    display: none;
+  }
+  .header_above_nav_menu, .header_above_nav-balance-search {
+    display: block;
+  }
+  .header_above_nav_menu i, .header_above_nav-balance-search i {
+    color: #fff;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

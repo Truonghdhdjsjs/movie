@@ -1,0 +1,144 @@
+@media screen and (max-width:1024px) {
+    .grid
+    {
+        max-width: 1000px;
+    }
+    .header_above
+    {
+        &_nav
+        {
+            padding: 0 10px;
+        }
+        &_nav-img a img
+        {
+            display: block;
+            width: 130px;
+            object-fit: contain;
+        }
+        &_nav-balance .txtsearch
+        {
+            min-width: 350px;
+            min-height: 40px;
+        }
+        &_nav-balance .btn_search
+        {
+            min-height: 40px;
+        }
+        &_nav-list_movie
+        {
+            min-height: 40px; 
+        }
+        &_nav_menu
+        {
+            display: block;
+        }
+        &_nav_menu i
+        {
+            color: $font-color;
+            font-size: 1.4rem;
+        }
+        &_nav_menu_border
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgb(32, 32, 33);
+            height: 100%;
+            max-width: 300px;
+            transform: translateX(-100%);
+            transition: 0.3s ease;
+        }
+       .active
+        {
+            transform: translateX(0%);
+        }
+        &_nav_menu_border ul
+        {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-direction: column;
+            list-style: none;
+            gap: 5px 0; 
+            padding-top: 10px; 
+            overflow-y:scroll;
+        }
+        &_nav_menu_border ul li a,
+        &_nav_menu_border ul li span
+        {
+            text-decoration: none;
+            color: $font-color;
+            text-transform: capitalize;
+            font-size: 1rem;
+            letter-spacing: 0.25px;
+            font-weight: 500;
+            transition:  0.3s ease;
+        }
+        &_nav_menu_border ul li a:hover,
+        &_nav_menu_border ul li a:active
+        {
+            color: #b4b4b4;
+        }
+        &_nav_menu_border i
+        {
+            display: flex;    
+            justify-content: end;
+            padding-top:10px ;
+            padding-right: 10px;
+            font-size: 1.2rem; 
+            transition: 0.3s ease-in;
+        }
+        &_nav_menu_border i:hover,
+        &_nav_menu_border i:active
+        {
+            color: #b4b4b4;
+        }
+        .drop_downs
+        {
+            height: 0px;
+            overflow: hidden;
+        }
+        .drop_downs ul
+        {
+            display: flex;
+            align-items: start;
+            list-style: none;
+        
+        }
+        .appear
+        {
+            height:  320px;
+            
+        }
+    }
+    .header_hidden
+    {
+        display: none;
+    }
+   
+}
+@media screen and (max-width: 800px) {
+    .header_above
+    {
+        &_nav-img a img
+        {
+          margin-left: 150px;
+        }
+        &_nav-balance
+        {
+            display: none;
+        }
+        &_nav_menu,
+        &_nav-balance-search
+        {
+            display: block;
+        }
+        &_nav_menu i,
+        &_nav-balance-search i
+        {
+           color: $font-color;
+        }
+    }
+}
