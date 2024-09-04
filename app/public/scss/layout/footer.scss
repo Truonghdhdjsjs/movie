@@ -1,0 +1,114 @@
+/* Base styles for the footer */
+.footer {
+    background-color: #141414;
+    color: #e5e5e5;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+/* Footer content */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các cột gãy dòng khi cần */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer columns */
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px; /* Đảm bảo các cột không quá nhỏ trên các màn hình nhỏ */
+}
+
+.footer-column h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Social links */
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-link {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center; /* Căn giữa các cột trên màn hình nhỏ */
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+        text-align: center; /* Căn giữa nội dung trong các cột */
+        min-width: 100%; /* Cột chiếm toàn bộ chiều rộng */
+    }
+
+    .footer-column h4 {
+        font-size: 18px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-column h4 {
+        font-size: 16px;
+    }
+
+    .footer-column ul li {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}

@@ -316,3 +316,37 @@
       gap: 20px;
   }
 }
+/* Container for the slider */
+.banner_coming-soon_img {
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Ensure the container takes full width */
+}
+
+/* Each slide */
+.banner_coming-soon_img_slide {
+  min-width: 100%; /* Each slide takes up 100% of the container width */
+  transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+.banner_coming-soon_img_slide a img
+{
+  width: 1500px;
+}
+/* Optionally add styles for the navigation buttons */
+.prev-button, .next-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  opacity: 0;
+}
+.prev-button {
+  left: 10px;
+}
+.next-button {
+  right: 10px;
+}
