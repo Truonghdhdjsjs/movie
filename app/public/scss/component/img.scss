@@ -1,0 +1,19 @@
+.border_img
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.img
+{
+    max-width: 151.9px;
+    display: inline-block;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+.border_img:hover .img
+{
+    transform: scale(1.1);
+    opacity: 0.8;
+}

@@ -153,6 +153,7 @@
         margin: 0;
         padding: 0;
         display: none;
+        z-index: 1;
     }
     &_nav_drop_downs ul
     {
@@ -164,6 +165,7 @@
         // border: 1px solid rgb(205, 205, 205);
         background-color: rgb(49, 49, 49);
         padding: 5px 0;
+        padding-left: 6px;
     }
     &_nav_drop_downs ul li a
     {

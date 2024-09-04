@@ -1,0 +1,318 @@
+/* styles.css */
+// body {
+//     margin: 0;
+//     font-family: Arial, sans-serif;
+//   }
+
+// .border_img
+// {
+//     position: relative;
+//     display: inline-block;
+//     overflow: hidden;
+//     box-sizing: border-box;
+// }  
+
+  .banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 100%;
+    display: block;
+    filter: grayscale(70%);
+    // height:200px;
+    object-fit: contain;
+   
+  }
+  .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    top: 0;
+    color: white;
+    background: rgba(37, 37, 37, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 40%;
+    min-height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+  }
+  
+  .caption h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  
+  .caption p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 100%;
+  }
+  
+  .cta-button {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #f40612;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    // border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .dot {
+    display: inline-block;
+    background-color: #bbb;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  .year_of_release
+  {
+    display: flex;
+    gap:0 10px;
+  }
+  .year_of_release p:nth-child(2)
+  {
+    border: 2px solid rgb(232, 232, 232);
+    padding: 2px;
+  }
+  .actor_master
+  {
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+  }
+  #Featured_Movie
+  {
+    padding-top: 10px ;
+  }
+  .movies_h2 h2
+  {
+     color: $font-color;
+     text-transform: capitalize;
+    //  border: 1px solid rgb(132, 132, 132);
+     display: inline-block;
+     padding: 6px;
+     border-radius: 2px;
+    //  background-color: rgb(207, 207, 207);
+  }
+  .Featured_Movies_container
+  {
+        position: relative;
+        width: 100%;
+        max-width: 1600px;
+        margin: auto; 
+        overflow: hidden;
+        // overflow-x: scroll;
+        transition:all 0.3s ease;
+ }
+  .Featured_Movies
+  {
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    // overflow: hidden;
+    position: relative;
+    transition:all 0.3s ease;
+  }
+  .Movies_Content 
+  {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    &_img
+    {
+        max-width: 151.9px;
+        display: inline-block;
+        object-fit: contain;
+        transition: 0.3s ease;
+    }
+    &:hover  &_img
+    {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    &:not(:hover)  &_img
+    {
+        // transform: scale(0);
+        filter: grayscale(100%);
+    }
+    &_category
+    {
+        position: absolute;
+        top: 0;
+        background-color: #FED700;
+        padding: 0 10px;
+        z-index: 1;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    &_category span
+    {
+        color: #000;
+        text-transform: capitalize;
+        font-size: 0.8rem;
+    }
+    &_number_of_episodes
+    {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #FED700;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    &_number_of_episodes span
+    {
+        color: #000;
+        text-transform: capitalize;
+        font-size: 0.9rem;
+        padding: 0 6px;
+    }
+    &_All
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s ease;
+    }
+   &_content_movie
+   {
+        color: #fff;
+   }
+  }
+  .Featured_Movies_content_movie
+  {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .Featured_Movies_content_moviea
+  {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+.movie_outstanding
+{
+
+  &_content
+  {
+    @extend .border_img;
+    display: inline-block;
+    overflow: hidden
+  }
+  &_content a img
+  {
+        @extend .img;
+  }
+  &_category
+  {
+    position: absolute;
+    top: 0;
+    background-color: #FED700;
+    padding: 0 10px;
+    z-index: 1;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  &_category span
+  {
+    color: #000;
+        text-transform: capitalize;
+        font-size: 0.8rem;
+  }
+  &_number_of_episodes
+  {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #FED700;
+      border-top-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+  }
+  &_number_of_episodes span
+  {
+      color: #000;
+      text-transform: capitalize;
+      font-size: 0.9rem;
+      padding: 0 6px;
+  }
+  &_all
+  {
+       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+}

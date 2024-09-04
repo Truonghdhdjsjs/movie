@@ -1,4 +1,8 @@
 @media screen and (max-width:1024px) {
+    body
+    {
+        font-size: 45%;
+    }
     .grid
     {
         max-width: 1000px;
@@ -49,6 +53,7 @@
             max-width: 300px;
             transform: translateX(-100%);
             transition: 0.3s ease;
+            z-index: 3;
         }
        .active
         {
@@ -99,6 +104,7 @@
         {
             height: 0px;
             overflow: hidden;
+            transition: 0.3s ease;
         }
         .drop_downs ul
         {
@@ -110,7 +116,36 @@
         .appear
         {
             height:  320px;
-            
+            transition: 0.3s ease;
+        }
+        &_nav_menu_border ul li div
+        {
+            display: flex;
+            align-items: center;
+            gap: 0 5px;
+        }
+        &_nav_menu_border ul li div input
+        {
+            border-radius: 4px;
+            outline: none;
+            padding: 4px 0;
+        }
+        &_nav_menu_border ul li div input::placeholder
+        {
+            color: #b4b4b4;
+            padding-left: 4px;
+        }
+        &_nav_menu_border ul li div label 
+        {
+            background-color: $button-active;
+            border-radius: 4px;
+            padding-bottom: 6px;
+            padding-left: 5px;
+            transition: all 0.3s ease;
+        } 
+        &_nav_menu_border ul li div label:hover
+        {
+            background-color: #fb6161;
         }
     }
     .header_hidden
@@ -118,8 +153,39 @@
         display: none;
     }
    
+    .caption
+    {
+        display: flex;
+        gap: 0px;
+    }
+    .caption h1
+    {
+        font-size: 1.5rem;
+    }
+    .caption p
+    {
+        font-size: 13px;
+    }
+    .year_of_release  p
+    {
+        font-size: 13px;
+    }
+    .actor_master strong,
+    .actor_master span
+    {
+        font-size: 13px;
+    }
+    .prev,
+    .next
+    {
+        display: none;
+    }
 }
 @media screen and (max-width: 800px) {
+    // body
+    // {
+    //     font-size: 40%;
+    // }
     .header_above
     {
         &_nav-img a img
@@ -140,5 +206,88 @@
         {
            color: $font-color;
         }
+    }
+    .caption
+    {
+        display: flex;
+        gap: 0px;
+        justify-content: center;
+    }
+    .caption h1
+    {
+        font-size: 1.2rem;
+    }
+    .caption p
+    {
+        font-size: 11px;
+    }
+    .year_of_release  p
+    {
+        font-size: 11px;
+    }
+    .actor_master strong,
+    .actor_master span
+    {
+        font-size: 11px;
+    }
+    .prev,
+    .next
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    // body
+    // {
+    //     font-size: 40%;
+    // }
+    .header_above
+    {
+        &_nav-img a img
+        {
+          margin-left: 150px;
+        }
+        &_nav-balance
+        {
+            display: none;
+        }
+        &_nav_menu,
+        &_nav-balance-search
+        {
+            display: block;
+        }
+        &_nav_menu i,
+        &_nav-balance-search i
+        {
+           color: $font-color;
+        }
+    }
+    .caption
+    {
+        display: flex;
+        gap: 0px;
+        justify-content: center;
+    }
+    .caption h1
+    {
+        font-size: 1.2rem;
+    }
+    .caption p
+    {
+        font-size: 11px;
+    }
+    .year_of_release  p
+    {
+        font-size: 11px;
+    }
+    .actor_master strong,
+    .actor_master span
+    {
+        font-size: 11px;
+    }
+    .prev,
+    .next
+    {
+        display: none;
     }
 }
