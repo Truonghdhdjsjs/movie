@@ -14,10 +14,14 @@
 //file component
 @import './component/img.scss';
 @import './component/banner.scss';
+@import './component/grid.scss';
 ///file layout
 @import './layout/header.scss';
 @import './layout/footer.scss';
 // file page
 @import './pages/home.scss';
+@import './pages/search.scss';
+@import './pages/list_movie.scss';
+@import './pages/information.scss';
 
 @import './abstracts/media.scss';

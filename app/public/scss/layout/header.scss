@@ -1,3 +1,7 @@
+body
+{
+    font-size:40%;
+}
 .header_above
 {
     padding-top: 10px;
@@ -96,8 +100,9 @@
     {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 0 10px;
+        justify-content: start;
+        gap: 0 15px;
+        flex-wrap:wrap;
     }
     &_nav-list li a
     {

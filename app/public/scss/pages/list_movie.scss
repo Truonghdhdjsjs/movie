@@ -1,0 +1,26 @@
+.list_number
+{
+    & ul
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 10px;
+    }
+    & ul li a
+    {
+        color: $font-color;
+        text-decoration: none;
+        border: 1px solid $button-active;
+        text-transform: capitalize;
+        padding:6px 10px;
+        background-color: $button-active;
+        transition: all 0.3s ease;
+    }
+    
+    & ul li a:hover,
+    & ul li a:active
+    {
+        background-color: #f55c62;
+    }
+}

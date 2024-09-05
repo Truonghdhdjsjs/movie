@@ -51,9 +51,11 @@
                                         <li><a href="">liên hệ</a></li>
                                         <li>
                                             <div>
-                                                <input type="search" name="txtsearch" id="txtsearch" class="txtsearch" placeholder="Tìm kiếm phim của bạn...">
-                                                <label for="btn_search"><i class="fa-solid fa-magnifying-glass"></i></label>
-                                                <input type="submit" value="" hidden name="btn_search">
+                                                <form action="" method="post">
+                                                    <input type="search" name="txtsearch" id="txtsearchss" class="txtsearchs" placeholder="Tìm kiếm phim của bạn..." required>
+                                                    <!-- <label for="btn_search"><i class="fa-solid fa-magnifying-glass"></i></label> -->
+                                                    <input type="submit" value="Tim kiem"  name="btn_search" id="button_searchs">
+                                                </form>
                                             </div>
                                         </li>
                                     </ul>
@@ -63,9 +65,9 @@
                                 <a href="index.html"><img src="./img/logo/Screenshot_2024-09-01_220642-removebg-preview.png" alt="NETFLIX" class="header_above_nav-img_logo" loading="lazy"></a>
                             </div>
                             <div class="header_above_nav-search">
-                                <form action="index.html" method="post">
+                                <form action="index.html" method="post" id="form_search">
                                     <div class="header_above_nav-balance">
-                                        <input type="search" name="txtsearch" id="txtsearch" class="txtsearch" placeholder="Tìm kiếm phim của bạn ..." maxlength="30" minlength="1" >
+                                        <input type="search" name="txtsearch" id="txtsearchs" class="txtsearch" placeholder="Tìm kiếm phim của bạn ..." maxlength="30" minlength="1" >
                                         <input type="submit" value="Tìm kiếm" name="btn_search" id="btn_search" class="btn_search">
                                     </div>
                                     <!-- <div class="header_above_nav-balance-search">
@@ -75,7 +77,7 @@
                             </div>
                             <div class="header_above_nav-list_movie">
                                     <a href="">
-                                        <span>Danh sách phim</span>
+                                        <span>Tủ phim</span>
                                     </a>
                             </div>
                         </nav>
@@ -905,7 +907,8 @@
         
     </div>
 </body>
-<script src="./js/slide/banner_coming_soon.js"></script>
+<script src="./js/button/button_search.js"></script>
+<!-- <script src="./js/slide/banner_coming_soon.js"></script> -->
 <script src="./js/slide/slide_movie.js"></script>
 <script src="./js/button/button_menu..js"></script>
 <script src="./js/button/menu_drop.js"></script>

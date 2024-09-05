@@ -1,0 +1,14 @@
+.horizontal
+{
+    display: flex;
+    align-items: start;
+    gap:0 30px;
+    flex-wrap: wrap;
+    // justify-content: space-around;
+}
+.middle
+{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
